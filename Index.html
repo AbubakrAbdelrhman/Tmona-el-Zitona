@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>تمونة الزيتونة 🫒</title>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Tajawal:wght@400;500;700&family=Reem+Kufi:wght@600&display=swap" rel="stylesheet">
+<style>
+:root{--bg1:#fff8e7;--bg2:#eef3d6;--ink:#2f3a14;--soft:#5c6b2e;--card:rgba(255,255,255,.78);--line:#d9c98a;--gold:#c9962b;--olive:#6b7a2a;--btn1:#6b7a2a;--btn2:#4f6b22;--btnink:#fffdf3;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg1:#1d2410;--bg2:#2a3315;--ink:#f6efd2;--soft:#c9d49a;--card:rgba(20,26,10,.7);--line:#6b6a2d;--gold:#e6b94d;--btn1:#8fa13a;--btn2:#5f7d2a;--btnink:#10160a}}
+:root[data-theme="dark"]{--bg1:#1d2410;--bg2:#2a3315;--ink:#f6efd2;--soft:#c9d49a;--card:rgba(20,26,10,.7);--line:#6b6a2d;--gold:#e6b94d;--btn1:#8fa13a;--btn2:#5f7d2a;--btnink:#10160a}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;font-family:'Tajawal',system-ui,sans-serif;color:var(--ink);background:var(--bg1);background-image:radial-gradient(circle at 15% 10%,var(--bg2),transparent 55%),radial-gradient(circle at 90% 90%,var(--bg2),transparent 50%);overflow-x:hidden}
+#rain{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+#rain svg{position:absolute;top:-40px;animation:fall linear infinite;opacity:.55}
+@keyframes fall{to{transform:translateY(115vh) rotate(360deg)}}
+#fx{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:5}
+main{position:relative;z-index:1;max-width:560px;margin:0 auto;padding:28px 18px 40px;text-align:center}
+.hero svg{width:min(300px,80%);height:auto;display:block;margin:0 auto -6px}
+h1{font-family:'Reem Kufi','Tajawal',sans-serif;font-size:clamp(2.2rem,9vw,3.2rem);margin:6px 0 2px;color:var(--olive);background:linear-gradient(90deg,var(--olive),var(--gold),var(--olive));-webkit-background-clip:text;background-clip:text;color:transparent;animation:pop .9s cubic-bezier(.2,1.4,.4,1) both}
+@keyframes pop{from{transform:scale(.6);opacity:0}}
+.sub{margin:0 0 22px;color:var(--soft);font-size:1.02rem}
+.card{background:var(--card);backdrop-filter:blur(6px);border:1.5px solid var(--line);border-radius:22px;padding:24px 20px 18px;box-shadow:0 10px 30px rgba(80,90,20,.14);position:relative}
+.card::before{content:'🫒';position:absolute;top:-16px;left:50%;transform:translateX(-50%);font-size:1.6rem;background:var(--bg1);border-radius:50%;padding:0 6px}
+#msg{font-family:'Amiri',serif;font-size:clamp(1.35rem,5.4vw,1.75rem);line-height:2;min-height:7.5em;display:flex;align-items:center;justify-content:center;transition:opacity .45s,transform .45s}
+#msg.out{opacity:0;transform:translateY(8px)}
+#src{color:var(--gold);font-weight:700;font-size:.95rem;min-height:1.4em;margin-top:2px}
+.again{margin-top:12px;background:none;border:1.5px dashed var(--line);color:var(--soft);font:inherit;padding:7px 16px;border-radius:99px;cursor:pointer}
+.again:active{transform:scale(.96)}
+h2{font-family:'Reem Kufi','Tajawal',sans-serif;font-size:1.7rem;margin:34px 0 14px;color:var(--ink)}
+h2::after{content:'';display:block;width:64px;height:4px;border-radius:4px;margin:8px auto 0;background:linear-gradient(90deg,var(--olive),var(--gold))}
+.btns{display:grid;gap:12px}
+.btn{display:flex;align-items:center;gap:14px;text-align:right;text-decoration:none;color:var(--btnink);background:linear-gradient(135deg,var(--btn1),var(--btn2));padding:15px 18px;border-radius:18px;box-shadow:0 8px 18px rgba(79,107,34,.28);transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-3px)}
+.btn:active{transform:scale(.98)}
+.btn i{font-style:normal;font-size:1.7rem;flex:none}
+.btn b{display:block;font-size:1.1rem}
+.btn small{opacity:.85;font-size:.82rem;direction:ltr;display:block;text-align:right}
+footer{margin-top:30px;color:var(--soft);font-size:.95rem}
+@media (prefers-reduced-motion:reduce){#rain,#fx{display:none}*{animation:none!important}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="olive" viewBox="0 0 24 32"><ellipse cx="12" cy="18" rx="9" ry="13" fill="#6b7a2a"/><ellipse cx="8.5" cy="12" rx="2.5" ry="4.5" fill="#fff" opacity=".3" transform="rotate(15 8.5 12)"/><path d="M12 5q0-3 3-4" stroke="#4b3b1f" fill="none" stroke-width="1.6"/></symbol>
+<symbol id="leaf" viewBox="0 0 40 16"><path d="M0 8Q20-6 40 8Q20 22 0 8Z" fill="#7a9a3a"/><path d="M2 8H38" stroke="#4f6b22" stroke-width="1"/></symbol>
+</svg>
+<div id="rain" aria-hidden="true"></div>
+<canvas id="fx"></canvas>
+<main>
+  <div class="hero"><svg id="branch" viewBox="0 0 300 130" aria-hidden="true"><path d="M10 90Q150 20 290 70" stroke="#7a5a2b" stroke-width="4" fill="none" stroke-linecap="round"/></svg></div>
+  <h1>تمونة الزيتونة</h1>
+  <p class="sub">أهلاً بالدكتورة تمني، يوم سعيد وقلب مطمئن 🎉</p>
+
+  <section class="card">
+    <div id="msg"></div>
+    <div id="src"></div>
+    <button class="again" id="again" type="button">✨ رسالة أخرى</button>
+  </section>
+
+  <h2>الخبر شنو؟</h2>
+  <nav class="btns">
+    <a class="btn" target="_blank" rel="noopener" href="https://docs.google.com/forms/d/e/1FAIpQLSeqj1JQv8eGwU-2honTxG5215fwp9-rEV7LGt6-4-DNhqro5A/viewform"><i>🚑</i><span><b>التقييم الأولي</b><small>Part 1 · Initial Assessment</small></span></a>
+    <a class="btn" target="_blank" rel="noopener" href="https://docs.google.com/forms/d/e/1FAIpQLSdhpoIRud9xu0EjzRiHSOyuC4TIrlPFHb2nhC1rtGfuG9LO2Q/viewform"><i>📈</i><span><b>المتابعة وإعادة التقييم</b><small>Part 2 · Follow-up</small></span></a>
+    <a class="btn" target="_blank" rel="noopener" href="https://docs.google.com/forms/d/e/1FAIpQLSc1oer0uXnT_f89481Ngh3t1Nsl378vUdsgv9XnNq-PvqVZCg/viewform"><i>🏁</i><span><b>النتيجة النهائية</b><small>Part 3 · Final Outcome</small></span></a>
+  </nav>
+  <footer>هدية بكل الحب لأجمل دكتورة 🫒💚</footer>
+</main>
+
+<script>
+const MSGS=[
+["«وَمَن يَتَوَكَّلْ عَلَى اللَّهِ فَهُوَ حَسْبُهُ»","الطلاق ٣"],
+["«فَإِنَّ مَعَ الْعُسْرِ يُسْرًا ۝ إِنَّ مَعَ الْعُسْرِ يُسْرًا»","الشرح ٥–٦"],
+["«وَإِذَا مَرِضْتُ فَهُوَ يَشْفِينِ»","الشعراء ٨٠"],
+["«وَمَنْ أَحْيَاهَا فَكَأَنَّمَا أَحْيَا النَّاسَ جَمِيعًا»","المائدة ٣٢"],
+["«لَا يُكَلِّفُ اللَّهُ نَفْسًا إِلَّا وُسْعَهَا»","البقرة ٢٨٦"],
+["«وَقُل رَّبِّ زِدْنِي عِلْمًا»","طه ١١٤"],
+["«إِنَّ اللَّهَ مَعَ الصَّابِرِينَ»","البقرة ١٥٣"],
+["«وَلَسَوْفَ يُعْطِيكَ رَبُّكَ فَتَرْضَىٰ»","الضحى ٥"],
+["«فَاذْكُرُونِي أَذْكُرْكُمْ»","البقرة ١٥٢"],
+["«أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ»","الرعد ٢٨"],
+["«وَلَا تَهِنُوا وَلَا تَحْزَنُوا وَأَنتُمُ الْأَعْلَوْنَ إِن كُنتُم مُّؤْمِنِينَ»","آل عمران ١٣٩"],
+["«وَاصْبِرْ وَمَا صَبْرُكَ إِلَّا بِاللَّهِ»","النحل ١٢٧"],
+["«رَبِّ اشْرَحْ لِي صَدْرِي ۝ وَيَسِّرْ لِي أَمْرِي»","طه ٢٥–٢٦"],
+["«يَرْفَعِ اللَّهُ الَّذِينَ آمَنُوا مِنكُمْ وَالَّذِينَ أُوتُوا الْعِلْمَ دَرَجَاتٍ»","المجادلة ١١"],
+["«وَقُولُوا لِلنَّاسِ حُسْنًا»","البقرة ٨٣"],
+["«وَالتِّينِ وَالزَّيْتُونِ»","التين ١ · وأنتِ زيتونة مباركة 🫒"],
+["«أحبُّ الناسِ إلى اللهِ أنفعُهم للناسِ»","حديث شريف · حسّنه الألباني"],
+["«ما أنزل اللهُ داءً إلا أنزل له شفاءً»","رواه البخاري"],
+["«إنّ اللهَ يحبُّ إذا عمل أحدُكم عملاً أن يُتقِنَه»","رواه البيهقي"],
+["«الكلمةُ الطيّبةُ صدقة»","متفق عليه"],
+["«تبسُّمُك في وجه أخيك صدقة»","رواه الترمذي"],
+["«من سلك طريقاً يلتمسُ فيه علماً سهّل اللهُ له به طريقاً إلى الجنة»","رواه مسلم"],
+["«عجباً لأمر المؤمن، إنّ أمره كلَّه له خير»","رواه مسلم"],
+["«واعلمْ أنّ النصرَ مع الصبر، وأنّ الفرجَ مع الكرب، وأنّ مع العسرِ يسراً»","رواه أحمد"],
+["«الراحمون يرحمُهم الرحمن»","رواه أبو داود والترمذي"],
+["«المؤمنُ القويُّ خيرٌ وأحبُّ إلى اللهِ من المؤمن الضعيف، وفي كلٍّ خير»","رواه مسلم"],
+["كلُّ مريضٍ تسمعين له اليوم يحمل حكاية، وأنتِ أجمل فصولها.","✨"],
+["تعبُكِ اليوم يصنع راحةَ غيرِك غداً.","💚"],
+["خذي نَفَساً عميقاً، فأنتِ تفعلين ما هو أهمّ مما تظنين.","🌿"],
+["الطبيبةُ التي تبتسم تعالج نصف المرض قبل أن تكتب الدواء.","😊"],
+["السهرُ والتعب سيصبحان يوماً حكاية فخرٍ ترويها.","⭐"],
+["اشربي ماءً وكُلي شيئاً لذيذاً… فالطبيبة بشرٌ أيضاً 😄","🍽️"],
+["أنتِ زيتونةٌ مباركة، جذورها ثابتة وثمرُها خير.","🫒"],
+["لا تُعالجين أجساداً فقط، بل تُعيدين الطمأنينة إلى القلوب.","🩺"],
+["اليومُ فرصةٌ جديدة لتصنعي فرقاً في حياة أحدهم.","🌅"]
+];
+
+// غصن الزيتون
+(function(){const b=document.getElementById('branch');let h='',o='';
+for(let i=0;i<9;i++){const t=.08+i*.1,u=1-t,x=u*u*10+2*u*t*150+t*t*290,y=u*u*90+2*u*t*20+t*t*70,
+dx=2*u*140+2*t*140,dy=2*u*-70+2*t*50,a=Math.atan2(dy,dx)*180/Math.PI,s=i%2?-1:1;
+h+=`<use href="#leaf" x="${x}" y="${y-9}" width="46" height="18" transform="rotate(${a+s*38} ${x} ${y})"/>`;
+if(i==2||i==5||i==7)o+=`<path d="M${x} ${y}v14" stroke="#7a5a2b" stroke-width="1.5"/><use href="#olive" x="${x-7}" y="${y+12}" width="14" height="19"/>`;}
+b.insertAdjacentHTML('beforeend',h+o);})();
+
+// زيتون يتساقط
+(function(){const r=document.getElementById('rain');
+for(let i=0;i<14;i++){const s=document.createElementNS('http://www.w3.org/2000/svg','svg'),w=14+Math.random()*14;
+s.setAttribute('width',w);s.setAttribute('height',w*1.33);s.setAttribute('viewBox','0 0 24 32');
+s.style.left=Math.random()*100+'%';s.style.animationDuration=(9+Math.random()*10)+'s';s.style.animationDelay=(-Math.random()*15)+'s';
+s.innerHTML='<use href="#'+(i%3?'olive':'leaf')+'"/>';r.appendChild(s);}})();
+
+// رسالة مختلفة في كل مرة
+const msg=document.getElementById('msg'),src=document.getElementById('src');
+let last=-1;try{last=+localStorage.getItem('tamni_last')}catch(e){}
+function show(first){let n;do{n=Math.floor(Math.random()*MSGS.length)}while(n===last&&MSGS.length>1);last=n;
+try{localStorage.setItem('tamni_last',n)}catch(e){}
+const set=()=>{msg.textContent=MSGS[n][0];src.textContent=MSGS[n][1];msg.classList.remove('out')};
+if(first){set()}else{msg.classList.add('out');setTimeout(set,350)}}
+show(true);
+document.getElementById('again').onclick=()=>{show(false);burst(60)};
+
+// احتفال
+const cv=document.getElementById('fx'),cx=cv.getContext('2d');let ps=[],run=false;
+function size(){cv.width=innerWidth;cv.height=innerHeight}size();addEventListener('resize',size);
+function burst(n){const C=['#c9962b','#6b7a2a','#e8a0bf','#8e6bbf','#f4d35e','#7ec27a'];
+for(let i=0;i<n;i++)ps.push({x:innerWidth/2+(Math.random()-.5)*120,y:innerHeight*.35,vx:(Math.random()-.5)*12,vy:-Math.random()*11-3,r:4+Math.random()*5,c:C[i%6],a:Math.random()*6,va:(Math.random()-.5)*.4,l:1});
+if(!run){run=true;requestAnimationFrame(tick)}}
+function tick(){cx.clearRect(0,0,cv.width,cv.height);
+ps=ps.filter(p=>p.l>0&&p.y<cv.height+20);
+ps.forEach(p=>{p.vy+=.28;p.x+=p.vx;p.y+=p.vy;p.vx*=.99;p.a+=p.va;p.l-=.006;cx.save();cx.globalAlpha=Math.max(p.l,0);cx.translate(p.x,p.y);cx.rotate(p.a);cx.fillStyle=p.c;cx.fillRect(-p.r,-p.r/2,p.r*2,p.r);cx.restore()});
+if(ps.length)requestAnimationFrame(tick);else run=false}
+setTimeout(()=>burst(140),500);
+</script>
+</body>
+</html>
